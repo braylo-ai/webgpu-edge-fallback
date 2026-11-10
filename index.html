@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Edge Fallback Chat</title>
+<style>
+:root{--bg:#fafafa;--fg:#111;--card:#fff;--line:#ddd;--cloud:#2563eb;--local:#16a34a;--queued:#b45309}
+@media (prefers-color-scheme:dark){:root{--bg:#111;--fg:#eee;--card:#1c1c1c;--line:#333}}
+body{font-family:system-ui,sans-serif;background:var(--bg);color:var(--fg);max-width:680px;margin:2rem auto;padding:0 16px}
+form{display:flex;gap:8px}input{flex:1;padding:8px}.status{font-size:.9rem;opacity:.8}
+.answer{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--cloud);padding:8px;margin:8px 0;border-radius:6px}
+.answer.local{border-left-color:var(--local)}.answer.queued{border-left-color:var(--queued)}.answer.replayed{border-left-style:dashed}
+</style></head><body>
+<h1>Edge Fallback Chat</h1>
+<p class="status"><span id="gpu">WebGPU: checking…</span> · <span id="engine">Local model: –</span> · queued: <span id="queue">0</span></p>
+<form id="form"><input id="prompt" placeholder="Ask something" autocomplete="off"><button>Send</button></form>
+<div id="answers"></div>
+<h2>Events</h2><ul id="events"></ul>
+<script type="module" src="src/app.js"></script>
+</body></html>

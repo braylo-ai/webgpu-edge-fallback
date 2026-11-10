@@ -1,0 +1,7 @@
+node_modules/
+.DS_Store
+.walkthroughs/
+test-results/
+playwright-report/
+*.wasm
+*.bin

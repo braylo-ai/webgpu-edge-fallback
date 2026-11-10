@@ -1,0 +1,9 @@
+{
+  "date": "2026-11-10",
+  "browserName": "chromium",
+  "headless": true,
+  "navigator_gpu": true,
+  "adapter": false,
+  "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/141.0.7390.37 Safari/537.36",
+  "ui": "WebGPU: unavailable (no GPU adapter)"
+}

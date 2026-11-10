@@ -1,0 +1,15 @@
+{
+  "name": "webgpu-edge-fallback",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "license": "MIT",
+  "scripts": {
+    "test": "node --test tests/unit/*.test.js",
+    "test:e2e": "playwright test",
+    "serve": "node server/dev-server.mjs"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.56.1"
+  }
+}

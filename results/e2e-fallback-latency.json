@@ -1,0 +1,35 @@
+{
+  "label": "MOCKED cloud (Playwright page.route) + mock local echo engine; measures client fallback overhead only, not model speed",
+  "date": "2026-11-10",
+  "browser": "chromium (Playwright, headless)",
+  "timeoutMs": 300,
+  "summary": {
+    "503": {
+      "n": 30,
+      "sources": [
+        "local"
+      ],
+      "p50_ms": 4.200000047683716,
+      "p95_ms": 9.699999988079071,
+      "max_ms": 11.900000035762787
+    },
+    "ok": {
+      "n": 30,
+      "sources": [
+        "cloud"
+      ],
+      "p50_ms": 7.099999964237213,
+      "p95_ms": 14.400000035762787,
+      "max_ms": 161.10000002384186
+    },
+    "timeout": {
+      "n": 10,
+      "sources": [
+        "local"
+      ],
+      "p50_ms": 302.39999997615814,
+      "p95_ms": 302.4000000357628,
+      "max_ms": 302.4000000357628
+    }
+  }
+}
